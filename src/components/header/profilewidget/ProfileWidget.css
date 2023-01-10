@@ -1,0 +1,7 @@
+.profile-icon {
+    color: #fff;
+}
+
+.profile-icon:hover {
+    color: yellow;
+}

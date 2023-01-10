@@ -1,9 +1,10 @@
 import React from "react";
-import './CartWidget.css'
+import { BsCart4 } from "react-icons/bs";
+import "./CartWidget.css"
 
 export const CartWidget = () => {
     return (
-        <i className="bi bi-cart3"></i>
+       <BsCart4 className="cart-icon"/>
     )
 };
 
