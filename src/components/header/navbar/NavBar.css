@@ -8,9 +8,20 @@
 }
 
 .navbar-logo {
-    color: #fff;
-    justify-self: start;
+   display: flex;
+   align-items: center;
+   justify-content: start;
     cursor: pointer;
+}
+
+.navbar-title {
+    color: #fff;
+    margin-right: 0.7rem;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
 }
 
 .nav-menu {
@@ -38,7 +49,7 @@
 }
 
 .nav-links:hover {
-    color: yellow;
+    color:rgb(255, 242, 0);
 }   
 
 .menu-icon {

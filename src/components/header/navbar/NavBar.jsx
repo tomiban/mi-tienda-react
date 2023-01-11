@@ -11,7 +11,11 @@ import "./NavBar.css"
 const NavBar = () => {
 	return (
 		<nav className="NavbarItems">
-			<h1 className="navbar-logo">Tienda</h1>
+			<div className="navbar-logo">
+				<h1 className="navbar-title">Tienda  </h1>
+				<img src={require("../logo.png")} class alt="logo" />
+			</div>
+			
 			<div className="menu-icon" >	
 				<MenuWidget />
 			</div>
