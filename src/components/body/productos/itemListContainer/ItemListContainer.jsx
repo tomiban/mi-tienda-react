@@ -5,7 +5,6 @@ import "./ItemListContainer.css"
 
 export const ItemListContainer = () => {
 
-  
 
     const [data, setData] = useState();
     
@@ -17,12 +16,15 @@ export const ItemListContainer = () => {
         const data = await fetch("https://fakestoreapi.com/products");
         const productos = await data.json()
         setData(productos)
-   }
+  }
+  
+
+  const categoria = "jewelery"
 
     return (
-        <div className="">
-           <div className="item-container"> <ItemList data={data} /></div>
-            </div>
+        
+        <div className="cards"> <ItemList data={data} categoria={categoria } /> </div>
+            
     );
 };
 

@@ -1,11 +1,22 @@
 .card {
-    display: block;
-    width: 250px;
-    box-sizing: border-box;
-    padding: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 5px;
+max-width: 250px;
 }
 
-.item img {
-    width: 100%;
-    object-fit: cover;
+
+
+.card-img img {
+    width: 170px;
+    height: 170px;
 }
+
+.card-body {
+    text-align: center;
+    padding: 1rem;
+}
+
+
+

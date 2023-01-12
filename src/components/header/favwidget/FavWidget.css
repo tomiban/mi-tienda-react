@@ -1,9 +1,9 @@
-.profile-icon {
+.icon {
     color: #fff;
     height: 21px;
     width: 23px;
 }
 
-.profile-icon:hover {
+.icon:hover {
     color: yellow;
 }
