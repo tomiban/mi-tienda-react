@@ -40,7 +40,11 @@
 
 .nav-icons a {
     margin: 10px;
-    
+    color: white;
+}
+
+.nav-icons a:hover {
+    color: yellow;
 }
 
 .nav_toggle{

@@ -4,7 +4,9 @@ import "./FavWidget.css"
 
 export const FavWidget = () => {
     return (
-       <FiHeart className="icon" />
+       <FiHeart 
+
+className=""  />
     )
 };
 

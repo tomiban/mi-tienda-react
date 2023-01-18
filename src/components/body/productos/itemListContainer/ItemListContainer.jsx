@@ -19,11 +19,11 @@ export const ItemListContainer = () => {
   }
   
 
-  const categoria = "jewelery"
+  
 
     return (
         
-        <div className="cards"> <ItemList data={data} categoria={categoria } /> </div>
+        <div className="cards"> <ItemList data={data}  /> </div>
             
     );
 };

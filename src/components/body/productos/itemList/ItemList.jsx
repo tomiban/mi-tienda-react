@@ -1,14 +1,10 @@
 import Item from "../item/Item";
 
 
-const ItemList = ({ data = [], categoria }) => {
+const ItemList = ({ data = []}) => {
   
-  const listaPorCategoria = data.filter(producto => producto.category == categoria)
-
-
   return (
-    
-    listaPorCategoria.map(producto => <Item key={producto.id} data={producto} />)
+    data.map(producto => <Item key={producto.id} data={producto} />)
       
   );
 };

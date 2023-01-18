@@ -1,22 +1,81 @@
 .card {
-display: flex;
-flex-direction: column;
-align-items: center;
-border-radius: 5px;
-max-width: 250px;
+	background-color: #fff;
+	box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	max-width: 280px;
+	margin-bottom: 1rem;
+	max-height: 380px;
 }
 
+.card:hover {
+	border: 1px, solid black;
+	transition: 0.4s;
+}
 
+.card-img {
+	height: 180px;
+    width: 180px;
+}
 
 .card-img img {
-    width: 170px;
-    height: 170px;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+    margin: 0 auto;
+    
 }
 
 .card-body {
-    text-align: center;
-    padding: 1rem;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
 }
 
+.card-title {
+	margin: 3% auto;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+.card-price {
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+.card-fav-ico {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	cursor: pointer;
+}
+
+.card-fav-ico span:hover {
+	color: red;
+}
+
+.card-button {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	background: #006995;
+	overflow: hidden;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+.card-button {
+	transform: scale(.9);
+}
 
 
