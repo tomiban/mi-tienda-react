@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import {GrFormAdd,GrFormSubtract} from  "react-icons/gr"
+import { GrFormAdd, GrFormSubtract } from "react-icons/gr"
+import {Button} from "react-bootstrap"
 import './ItemCount.css';
 
 const ItemCount = ({ initial, stock, onAdd }) => {
@@ -28,13 +29,15 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 					<GrFormSubtract className='icono' ></GrFormSubtract>
 				</button>
 			</div>
-			<div>
-				<button
-					className="btn-agregar"
+			<div className='w-100'>
+				<Button
+					variant='dark'
+					size="sm"
+					className="mt-2 px-1 py-2"
 					disabled={stock <= 0}
 					onClick={() => onAdd(count)}>
-					Agregar al carrito
-				</button>
+					Agregar a carrito
+				</Button>
 			</div>
 		</div>
 	);

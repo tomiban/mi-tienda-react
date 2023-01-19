@@ -23,9 +23,12 @@ export const ItemListContainer = () => {
 
 
 	return (
+		<section className='items-container'>
 		<div className="cards">
 			{data}
 		</div>
+
+		</section>
 	);
 };
 

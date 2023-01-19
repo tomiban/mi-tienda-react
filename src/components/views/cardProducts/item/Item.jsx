@@ -11,18 +11,18 @@ const Item = ({ data }) => {
 	};
 	
 	return (
-		<div className="card">
-			<div className="card-top">
+		<div className="card-product">
+			<div className="card-product-top">
 				<span className='fav-ico'>
 					<FavWidget />
 				</span>
 			</div>
-			<div className="card-img">
+			<div className="card-product-img">
 				<img src={data.image} alt="" />
 			</div>
 
-			<div className="card-body">
-				<div className="card-title">
+			<div className="card-product-body">
+				<div className="card-product-title">
 					<p className="">{data.title}</p>
 					<Link to={`/item/${data.id}`} className="card-link">Ver detalle </Link>
 				</div>
