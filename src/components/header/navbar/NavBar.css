@@ -15,6 +15,10 @@
    cursor: pointer;
 }
 
+Link {
+    text-decoration:darkcyan
+}
+
 .navbar-title {
     color: #fff;
     margin-right: 0.7rem;
@@ -27,7 +31,7 @@
 }
 
 
-.nav-links {
+.nav-links{
     margin: 15px;
     color: white;
     position: relative;

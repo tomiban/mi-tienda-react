@@ -8,8 +8,9 @@
 	justify-content: space-between;
 	overflow: hidden;
 	max-width: 280px;
-	margin-bottom: 1rem;
 	max-height: 380px;
+	text-decoration: none;
+	color: rgb(34, 33, 33);
 }
 
 .card:hover {
@@ -18,7 +19,7 @@
 }
 
 .card-img {
-	height: 180px;
+	height: 170px;
     width: 180px;
 }
 
@@ -26,8 +27,7 @@
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
 }
 
 .card-body {
@@ -38,9 +38,29 @@
 }
 
 .card-title {
-	margin: 3% auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-title p {
+	margin-bottom: 5px;
 	text-align: justify;
 	word-wrap: break-word;
+}
+
+.card-link {
+	text-decoration: none;
+	margin-bottom: 3%;
+	color: rgb(92, 92, 118);
+	font-weight: 300;
+	font-size: 0.9em;
+}
+
+.card-link:hover {
+	text-decoration: underline;
+	color: rgb(52, 52, 67);
 }
 
 .card-price {
@@ -48,18 +68,18 @@
 	font-size: 1.2em;
 	font-weight: bold;
 	text-align: center;
+	flex-grow: 1;
 }
 
-
-.card-fav-ico {
-	width: 100%;
+.card-top {
 	display: flex;
 	justify-content: end;
-	cursor: pointer;
+	width: 100%;
 }
 
-.card-fav-ico span:hover {
+.fav-ico:hover {
 	color: red;
+	cursor: pointer;
 }
 
 .card-button {

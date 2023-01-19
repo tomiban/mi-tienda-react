@@ -1,16 +1,21 @@
+import { Link, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+
 import './Item.css';
 import ItemCount from '../itemCount/ItemCount';
-import FavWidget from '../../../header/favwidget/FavWidget'
+import FavWidget from '../../../header/favwidget/FavWidget';
 
 const Item = ({ data }) => {
 	const onAdd = cantidad => {
 		console.log('Compraste ' + cantidad + ' unidades');
 	};
-
+	
 	return (
 		<div className="card">
-			<div className="card-fav-ico">
-				<span ><FavWidget /></span>
+			<div className="card-top">
+				<span className='fav-ico'>
+					<FavWidget />
+				</span>
 			</div>
 			<div className="card-img">
 				<img src={data.image} alt="" />
@@ -18,11 +23,16 @@ const Item = ({ data }) => {
 
 			<div className="card-body">
 				<div className="card-title">
-					<p className="card-title">{data.title}</p>
+					<p className="">{data.title}</p>
+					<Link to={`/product/${data.id}`} className="card-link">Ver detalle </Link>
 				</div>
 
 				<span className="card-price">$ {data.price}</span>
-				<ItemCount stock={7} initial={1} onAdd={onAdd} className="card-quantity" ></ItemCount>
+				<ItemCount
+					stock={7}
+					initial={1}
+					onAdd={onAdd}
+					className="card-quantity"></ItemCount>
 			</div>
 		</div>
 	);

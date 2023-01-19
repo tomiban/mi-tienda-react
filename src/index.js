@@ -5,16 +5,20 @@
 //Modulos
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //Estilos
 import './index.css';
 
 //Componentes
 import Header from './components/header/Header.jsx';
-import Body from './components/body/Body.jsx'
-import Footer from "./components/footer/Footer.jsx";
+
+import Home from './components/views/home/Home';
+import ItemListContainer from './components/views/cardProducts/itemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/views/itemDetailContainer/ItemDetailContainer';
+import AboutUs from './components/views/aboutus/AboutUs';
+
+import Footer from './components/footer/Footer.jsx';
 
 //Core
 import reportWebVitals from './reportWebVitals';
@@ -25,11 +29,18 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		
-    <Header />
-    <Body />
-	<Footer />
-		
+		<BrowserRouter>
+			<Header />
+			<Routes>
+
+				<Route exact path='/' element={<Home />} />
+				<Route exact path='/home' element={<Home />} />
+				<Route exact path='/products' element={<ItemListContainer />} />
+				<Route exact path='/product/:productId' element={<ItemDetailContainer/>} />
+				<Route exact path='/aboutus' element={<AboutUs />} />
+			</Routes>
+			<Footer />
+		</BrowserRouter>
 	</React.StrictMode>
 );
 

@@ -1,4 +1,11 @@
-import "./Lista.css";
+//1) Modulos
+import React from "react";
+
+
+//2) Estilos
+import "./modelo.css";
+
+// 3) Componentes
 
 const modelo = () => {
     return (
