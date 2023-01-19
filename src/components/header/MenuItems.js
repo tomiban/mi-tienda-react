@@ -1,17 +1,22 @@
 export const MenuItems = [
     {
-        title: "Inicio",
-        url: "/home",
+        title: "Femenino",
+        url: "women's clothing",
         cName: "nav-links"
     },
     {
-        title: "Productos",
-        url: "/products",
+        title: "Masculino",
+        url: "men's clothing",
         cName: "nav-links"
     },
     {
-        title: "Nosotros",
-        url: "/aboutus",
+        title: "Accesorios",
+        url: "jewelery",
+        cName: "nav-links"
+    },
+    {
+        title: "Tecnología",
+        url: "electronics",
         cName: "nav-links"
     }
 ]

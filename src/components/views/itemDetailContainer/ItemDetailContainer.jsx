@@ -7,15 +7,15 @@ import ItemDetail from './itemDetail/itemDetail';
 
 const ItemDetailContainer = () => {
 	const [product, setProduct] = useState([]);
-
-	const { productId } = useParams();
+	const { id } = useParams();
+	console.log(id)
 	useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${productId}`)
+    fetch(`https://fakestoreapi.com/products/${id}`)
       .then(res => res.json())
       .then(item=> {
         setProduct(<ItemDetail key={item.id} data={item}></ItemDetail>);
       })
-	}, [productId]);
+	}, [id]);
 
 	return (
 		<section className="item-container">

@@ -32,12 +32,17 @@ root.render(
 		<BrowserRouter>
 			<Header />
 			<Routes>
-
-				<Route exact path='/' element={<Home />} />
-				<Route exact path='/home' element={<Home />} />
-				<Route exact path='/products' element={<ItemListContainer />} />
-				<Route exact path='/product/:productId' element={<ItemDetailContainer/>} />
-				<Route exact path='/aboutus' element={<AboutUs />} />
+			<Route
+					exact
+					path="/"
+					element={<ItemListContainer />}
+				/>
+				<Route
+					exact
+					path="/category/:categoryId"
+					element={<ItemListContainer />}
+				/>
+				<Route exact path="/item/:id" element={<ItemDetailContainer />} />
 			</Routes>
 			<Footer />
 		</BrowserRouter>

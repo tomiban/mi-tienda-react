@@ -21,8 +21,8 @@ const NavBar = () => {
 			<div className={`nav_items ${isOpen && 'open'}`}>
 				{MenuItems.map((item, index) => {
 					return (
-						<Link key={index} className={item.cName} to={item.url}>
-							{''}
+						<Link key={index} className={item.cName} to={`/category/${item.url}`}>
+							
 							{item.title}
 						</Link>
 					);
