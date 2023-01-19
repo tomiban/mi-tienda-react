@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PreEntrega2Banchio/static/css/main.d8fe1614.css",
+    "main.css": "/PreEntrega2Banchio/static/css/main.7cc5c3d9.css",
     "main.js": "/PreEntrega2Banchio/static/js/main.1072193b.js",
     "static/js/787.46493d11.chunk.js": "/PreEntrega2Banchio/static/js/787.46493d11.chunk.js",
     "static/media/logo.png": "/PreEntrega2Banchio/static/media/logo.5bd9d5288c4c99576c55.png",
     "index.html": "/PreEntrega2Banchio/index.html",
-    "main.d8fe1614.css.map": "/PreEntrega2Banchio/static/css/main.d8fe1614.css.map",
+    "main.7cc5c3d9.css.map": "/PreEntrega2Banchio/static/css/main.7cc5c3d9.css.map",
     "main.1072193b.js.map": "/PreEntrega2Banchio/static/js/main.1072193b.js.map",
     "787.46493d11.chunk.js.map": "/PreEntrega2Banchio/static/js/787.46493d11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8fe1614.css",
+    "static/css/main.7cc5c3d9.css",
     "static/js/main.1072193b.js"
   ]
 }
