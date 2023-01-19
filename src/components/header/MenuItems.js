@@ -10,7 +10,7 @@ export const MenuItems = [
         cName: "nav-links"
     },
     {
-        title: "Accesorios",
+        title: "Joyería",
         url: "jewelery",
         cName: "nav-links"
     },

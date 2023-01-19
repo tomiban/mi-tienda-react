@@ -3,7 +3,7 @@
     min-height: 80px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
 }
@@ -13,11 +13,10 @@
    align-items: center;
    justify-content: start;
    cursor: pointer;
+   width: min-content;
+   margin-left: 5%;
 }
 
-Link {
-    text-decoration:darkcyan
-}
 
 .navbar-title {
     color: #fff;
@@ -32,7 +31,7 @@ Link {
 
 
 .nav-links{
-    margin: 15px;
+    margin: 10px 20px;
     color: white;
     position: relative;
     text-decoration: none;
@@ -40,6 +39,10 @@ Link {
 
 .nav-links:hover {
     color:rgb(255, 242, 0);
+}
+
+.nav-icons {
+    margin-right: 3%;
 }
 
 .nav-icons a {
@@ -60,13 +63,13 @@ Link {
     .nav_items{
         background: linear-gradient(90deg, rgba(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
         position: absolute;
-        top: 60px;
+        top: 100px;
         left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 30vh;        
+        height: 40vh;        
         transform: translateX(-100%);
         transition: 0.3s ease all;
     }
