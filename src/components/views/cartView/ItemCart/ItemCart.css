@@ -1,4 +1,7 @@
-
+.img-carrito {
+    width: 60px;
+    max-height: 70px;
+}
 
 .btn-remove {
     cursor: pointer;

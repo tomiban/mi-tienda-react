@@ -16,15 +16,15 @@ const ItemCart = ({ product }) => {
   return (
 
 
-    <div className="card rounded-3 mb-4">
-      <div className="card-body p-4">
+    <div className="card rounded-3 mb-0">
+      <div className="card-body p-3">
         <div className="row d-flex justify-content-between align-items-center">
-          <div className="col-md-2 col-lg-2 col-xl-2">
+          <div className="col-md-2 col-lg-2 col-xl-2 text-center">
             <img src={product.image}
-              className="img-fluid rounded-3" />
+              className="img-fluid rounded-3 img-carrito" />
           </div>
           <div className="col-md-3 col-lg-3 col-xl-4">
-            <p className="lead fw-normal mb-2">{product.title}</p>
+            <p className="lead fw-normal m-0">{product.title.substring(0, 20)}</p>
           </div>
           <div className="col-md-3 col-lg-2 col-xl-2 d-flex flex-column justify-content-center align-items-center text-center my-2">
               <small className="text-muted">Cantidad</small>

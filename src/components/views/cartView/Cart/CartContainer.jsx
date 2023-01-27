@@ -41,7 +41,7 @@ const Cart = () => {
 
 
                     <div className="col-12 col-xl-7">
-                    <div className="card">
+                    <div className="card mt-3">
                             <div className="card-body p-4 d-flex justify-content-around">
                                 <div className="">
                                     <p className="mb-0 me-5 d-flex align-items-center">
