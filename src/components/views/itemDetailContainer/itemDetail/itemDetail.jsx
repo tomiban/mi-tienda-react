@@ -1,14 +1,38 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import ThemeProvider from 'react-bootstrap/ThemeProvider';
-import {Container, Button} from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Container } from 'react-bootstrap';
 import { AiFillStar } from 'react-icons/ai';
+import ItemCount from '../itemCount/ItemCount';
+import { useCartContext } from '../../../../context/CartContext';
+import { Link } from 'react-router-dom';
 
 const ItemDetail = ({ data }) => {
+
+	const { addProduct } = useCartContext()
+	
 	const { title, price, image, description, category, rating } = data;
-	console.log(rating);
-    return (
-        
+
+	const [goToCart, setGoToCart] = useState(false);
+	
+
+	const onAdd = count => {
+		setGoToCart(true)
+		addProduct(data, count)
+	};
+	
+	const botones = () => {
+		return (
+			<>
+				<Link to='/' className=''><Button variant='primary'>Seguir comprando</Button></Link> 
+				<Link to='/cart' className='mx-3'><Button  variant='outline-success'>Ir al carrito</Button></Link> 
+			</>
+		   
+			)
+	}
+
+
+	return (
+
 		<Container className='py-5'>
 			<div className="row py-5">
 				<div className="col-md-6">
@@ -19,12 +43,17 @@ const ItemDetail = ({ data }) => {
 					<h1 className="display-6">{title}</h1>
 					<p className="lead fw-bolder">
 						Rating {rating.rate && rating.rate}
-						<AiFillStar className='text-warning mb-1 mx-1'/>
+						<AiFillStar className='text-warning mb-1 mx-1' />
 					</p>
-                    <h3 className="display-6 fw-bold my-3">$ {price}</h3>
-                    <p className="lead">{description}.</p>
-                    <Button variant="dark" className='px-4 py-2'>Agregar al Carrito</Button>
-                    <Button variant="outline-dark" className='ms-2 px-3 py-2'>Ir al Carrito</Button>
+					<h3 className="display-6 fw-bold my-3">$ {price}</h3>
+					<p className="lead">{description}.</p>
+					
+					{goToCart ?
+						  botones() :
+						<ItemCount initial={1} stock={7} onAdd={onAdd} className=''></ItemCount>
+					}
+					
+					
 				</div>
 			</div>
 		</Container>

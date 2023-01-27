@@ -7,3 +7,9 @@
 .cart-icon:hover {
     color: yellow;
 }
+
+.badge {
+    padding: 3px 5px;
+    position: relative;
+    bottom: 6px;
+}
