@@ -27,8 +27,8 @@ const Cart = () => {
     }
 
     return (
-        <section className="min-h-100">
-            <div className="container h-100 py-5">
+        <section className="min-vh-100">
+            <div className="container py-5">
                 <div className="row d-flex justify-content-center align-items-center h-100">
                     <div className="col-12 col-xl-10">
 
