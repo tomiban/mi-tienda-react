@@ -7,10 +7,9 @@ const Footer = () => {
     <div>
       <footer className="py-3">
         <div className="container-fluid">
-          <div className="row d-flex align-items-center text-white">
+          <div className="row d-flex align-items-center justify-content-center mt-1">
 
-
-            <div className="col-9 col-xl-11 d-flex flex-column justify-content-end align-items-center">
+            <div className="col-10 col-xl-11 d-flex flex-column  align-items-center">
               <div className="d-flex align-items-center justify-content-center">
                 <div className=" mx-2">
                   <a href="https://github.com/tomiban" target="_blank" className="text-white"><FaGithub size={25} /></a>
@@ -25,9 +24,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-3 col-xl-1">
+            <div className="col-2 col-xl-1 p-0">
               <a href="https://plataforma.coderhouse.com/perfil-2021" target="_blank" className="text-star">
-                <img src="https://www.coderhouse.com/imgs/ch.svg" alt="" className="img-fluid" />
+                <img src="https://www.coderhouse.com/imgs/ch.svg" alt="" className="img-fluid pe-2" />
               </a>
             </div>
           </div>
