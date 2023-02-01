@@ -10,7 +10,7 @@ const ItemDetail = ({ data }) => {
 
 	const { addProduct } = useCartContext()
 	
-	const { title, price, image, description, category, rating } = data;
+	const { title, price, image, description, category, rate } = data;
 
 	const [goToCart, setGoToCart] = useState(false);
 	
@@ -36,13 +36,13 @@ const ItemDetail = ({ data }) => {
 		<Container className='py-5'>
 			<div className="row py-5">
 				<div className="col-md-6">
-					<img src={image} alt={title} height="400px" width="400px"></img>
+					<img src={image} alt={title} height="450px" width="450px"></img>
 				</div>
 				<div className="col-md-6 mt-2">
 					<h4 className="text-uppercase text-black-50">{category}</h4>
 					<h1 className="display-6">{title}</h1>
 					<p className="lead fw-bolder">
-						Rating {rating.rate && rating.rate}
+						Rating {rate}
 						<AiFillStar className='text-warning mb-1 mx-1' />
 					</p>
 					<h3 className="display-6 fw-bold my-3">$ {price}</h3>

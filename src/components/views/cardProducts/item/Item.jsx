@@ -20,7 +20,7 @@ const Item = ({ data }) => {
 			</div>
 
 			<div className="card-body d-flex flex-column align-items-center justify-content-end text-center">
-				<h5 className="card-title mt-3 mb-2">{data.title.substring(0, 20)}</h5>
+				<h5 className="card-title mt-3 mb-2">{data.title.substring(0, 14)}</h5>
 				<span className="card-text lead mb-2 fw-bold">$ {data.price}</span>
 				<div className="card-link">
 				<Link to={`/item/${data.id}`} className="btn btn-primary px-4 card-link">

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
+
 
 import ItemList from '../itemList/ItemList';
 import Loading from '../../../loading/Loading';
@@ -12,21 +14,41 @@ export const ItemListContainer = () => {
 	const { categoryId } = useParams();
 
 	useEffect(() => {
-
-		fetch(categoryId ? `https://fakestoreapi.com/products/category/${categoryId}` : 'https://fakestoreapi.com/products/')
+		/* fetch(categoryId ? `https://fakestoreapi.com/products/category/${categoryId}` : 'https://fakestoreapi.com/products/')
 			.then(res => res.json())
 			.then(productos => {
 				setData(<ItemList data={productos}></ItemList>);
 				setLoading(false);
-			});
-	}, [categoryId]);
+			});  */
 
+		const querydb = getFirestore();
+		const queryCollection = collection(querydb, 'listaProductos');
+		
+		
+		if (categoryId) {
+			const queryFilter = query(queryCollection, where('category', '==', categoryId)) 
+			
+			getDocs(queryFilter)
+			.then(res => setData(res.docs.map(product => (({ id: product.id, ...product.data() })))));
+		} else {
+			getDocs(queryCollection)
+			.then(res => setData(res.docs.map(product => (({ id: product.id, ...product.data() })))));
+		}
+
+	
+		
+		
+		
+			setLoading(false);
+		
+	}, [categoryId]);
+	
 
 
 	return (
 		<section className='items-container min-vh-100'>
 			<div className="cards">
-				{loading ? <Loading /> : data}
+				{loading ? <Loading /> : <ItemList data={data}></ItemList>}
 			</div>
 
 		</section>

@@ -11,12 +11,12 @@ export const MenuItems = [
     },
     {
         title: "Joyería",
-        url: "jewelery",
+        url: "accesory",
         cName: "nav-links"
     },
     {
         title: "Tecnología",
-        url: "electronics",
+        url: "electronic",
         cName: "nav-links"
     }
 ]
