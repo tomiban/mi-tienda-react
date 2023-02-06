@@ -16,13 +16,6 @@ const ItemDetailContainer = () => {
 	const { id } = useParams();
 
 	useEffect(() => {
-	/* 	fetch(`https://fakestoreapi.com/products/${id}`)
-			.then(res => res.json())
-			.then(item => {
-				setProduct(<ItemDetail key={item.id} data={item}></ItemDetail>);
-				setLoading(false);
-			});
- */
 		const querydb = getFirestore()
 		const queryDoc = doc(querydb, 'listaProductos', id)
 		getDoc(queryDoc)

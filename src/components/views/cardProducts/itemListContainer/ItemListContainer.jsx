@@ -14,12 +14,6 @@ export const ItemListContainer = () => {
 	const { categoryId } = useParams();
 
 	useEffect(() => {
-		/* fetch(categoryId ? `https://fakestoreapi.com/products/category/${categoryId}` : 'https://fakestoreapi.com/products/')
-			.then(res => res.json())
-			.then(productos => {
-				setData(<ItemList data={productos}></ItemList>);
-				setLoading(false);
-			});  */
 
 		const querydb = getFirestore();
 		const queryCollection = collection(querydb, 'listaProductos');
