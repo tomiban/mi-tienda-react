@@ -1,14 +1,20 @@
-import React from "react";
-import { FiHeart } from "react-icons/fi";
-import "./FavWidget.css"
+import React, { useState } from "react";
+import { BsSuitHeartFill, BsSuitHeart } from "react-icons/bs";
+import "./FavWidget.css";
 
-export const FavWidget = () => {
+import { useFavoritesContext } from "../../../context/FavContext";
+
+const FavWidget = ({ product, isFav, toggleFav}) => {
+	const { addToFavorites, favorites } = useFavoritesContext();
+    
     return (
-       <FiHeart 
-
-className=""  />
-    )
+        <span className="" onClick={() => {
+            addToFavorites(product);
+            toggleFav();
+        }}>
+             {isFav ? <BsSuitHeartFill /> : <BsSuitHeart />}
+        </span>
+    );
 };
 
 export default FavWidget;
-

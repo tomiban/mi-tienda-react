@@ -14,6 +14,7 @@ const ItemDetail = ({ data }) => {
 
 	const [loading, setLoading] = useState(true);
 
+
 	const onAdd = (count) => {
 		setGoToCart(true);
 		addProduct(data, count);
@@ -23,12 +24,12 @@ const ItemDetail = ({ data }) => {
 		return (
 			<>
 				<Link
-					to='/'
+					to='/PreEntrega2Banchio'
 					className=''>
 					<Button variant='primary'>Seguir comprando</Button>
 				</Link>
 				<Link
-					to='/cart'
+					to='/PreEntrega2Banchio/cart'
 					className='mx-3'>
 					<Button variant='outline-success'>Ir al carrito</Button>
 				</Link>
@@ -56,7 +57,7 @@ const ItemDetail = ({ data }) => {
 						<AiFillStar className='text-warning mb-1 mx-1' />
 					</p>
 					<h3 className='display-6 fw-bold my-3'>$ {price}</h3>
-					<p className='lead'>{description}.</p>
+					<p className='lead'>{description}</p>
 
 					{goToCart ? (
 						botones()

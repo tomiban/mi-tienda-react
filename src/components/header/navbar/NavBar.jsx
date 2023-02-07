@@ -4,11 +4,13 @@ import { MenuItems } from "../MenuItems";
 import CartWidget from "../cartwidget/CartWidget";
 import ProfileWidget from "../profilewidget/ProfileWidget";
 import FavWidget from "../favwidget/FavWidget";
+import FavoriteList from "../favoriteList/FavoriteList";
 
 import "./NavBar.css";
 
 const NavBar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [active, setActive] = useState(false);
 
 	return (
 		<nav className='NavbarItems'>
@@ -30,21 +32,26 @@ const NavBar = () => {
 						<Link
 							key={index}
 							className={item.cName}
-							to={`/category/${item.url}`}>
+							to={`/PreEntrega2Banchio/category/${item.url}`}>
 							{item.title}
 						</Link>
 					);
 				})}
 			</div>
 
-			<div className='nav-icons'>
-				<a href=''>
-					<ProfileWidget />
-				</a>
-				<a href=''>
+			<div className='nav-icons'>   
+				<span className=''
+					onClick={() => setActive(!active)}>
 					<FavWidget />
-				</a>
-				<Link to='/cart'>
+					<div
+						className={`container-cart-products ${
+							active ? "" : "hidden-cart"
+						}`}>
+						<FavoriteList />
+					</div>
+        </span>
+        
+				<Link to='/PreEntrega2Banchio/cart'>
 					<CartWidget />
 				</Link>
 			</div>

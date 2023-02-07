@@ -43,11 +43,11 @@
 
 .nav-icons {
 	margin-right: 3%;
+	color: #fff;
 }
 
 .nav-icons a {
-	margin: 10px;
-	color: white;
+	margin:  0 20px;
 }
 
 .nav-icons a:hover {

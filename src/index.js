@@ -17,6 +17,7 @@ import ItemListContainer from "./components/views/cardProducts/itemListContainer
 import ItemDetailContainer from "./components/views/itemDetailContainer/ItemDetailContainer";
 import Footer from "./components/footer/Footer.jsx";
 import CartProvider from "./context/CartContext";
+import FavoritesContextProvider from "./context/FavContext";
 import CartContainer from "./components/views/cartView/Cart/CartContainer";
 //Core
 import reportWebVitals from "./reportWebVitals";
@@ -31,6 +32,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <CartProvider>
+        <FavoritesContextProvider>
       <Header />
         <Routes>
           <Route
@@ -38,7 +40,8 @@ root.render(
             path="/PreEntrega2Banchio"
             element={<ItemListContainer />}
           />
-          <Route exact path="/" element={<ItemListContainer />} />
+            <Route exact path="/" element={<ItemListContainer />} />
+            
           <Route
             exact
             path="/PreEntrega2Banchio/category/:categoryId"
@@ -46,12 +49,13 @@ root.render(
           />
           <Route
             exact
-            path="/category/:categoryId"
+            path="/PreEntrega2Banchio/category/:categoryId"
             element={<ItemListContainer />}
           />
-          <Route exact path="/item/:id" element={<ItemDetailContainer />} />
-          <Route exact path="/cart" element={<CartContainer></CartContainer>}></Route>
-        </Routes>
+          <Route exact path="/PreEntrega2Banchio/item/:id" element={<ItemDetailContainer />} />
+          <Route exact path="/PreEntrega2Banchio/cart" element={<CartContainer></CartContainer>}></Route>
+          </Routes>
+          </FavoritesContextProvider>
       </CartProvider>
       <Footer />
     </BrowserRouter>

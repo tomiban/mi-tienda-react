@@ -24,8 +24,8 @@
 
 .card-product-img img {
 	max-width: 100%;
-max-height: 100%;
-object-fit: cover;
+	max-height: 100%;
+	object-fit: cover;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -38,9 +38,18 @@ object-fit: cover;
 	width: 100%;
 }
 
-.fav-ico:hover {
+.isFav {
 	color: red;
 	cursor: pointer;
+}
+
+.noFav {
+	color: #000;
+	cursor: pointer;
+}
+
+.noFav:hover {
+	color: red;
 }
 
 .card-product-body {
@@ -49,7 +58,7 @@ object-fit: cover;
 	flex-direction: column;
 	align-items: center;
 	justify-content: end;
-	}
+}
 
 .card-product-title {
 	overflow: hidden;
@@ -71,6 +80,6 @@ object-fit: cover;
 
 @media only screen and (max-width: 767px) {
 	.card-product-title {
-	  width: 100%;
+		width: 100%;
 	}
-  }
+}
