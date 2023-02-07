@@ -21,14 +21,6 @@ const NavBar = () => {
 						src={require("../logo.png")}
 						alt='logo'
 					/>
-					
-			<div
-				className={`nav_toggle ${isOpen && "open"}`}
-				onClick={() => setIsOpen(!isOpen)}>
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
 				</div>
 			</Link>
 
@@ -57,6 +49,13 @@ const NavBar = () => {
 				</Link>
 			</div>
 
+			<div
+				className={`nav_toggle ${isOpen && "open"}`}
+				onClick={() => setIsOpen(!isOpen)}>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
 		</nav>
 	);
 };
