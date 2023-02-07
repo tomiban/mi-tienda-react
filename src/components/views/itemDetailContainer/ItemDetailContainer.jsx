@@ -6,11 +6,11 @@ import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import './ItemDetailContainer.css';
 
 import ItemDetail from './itemDetail/itemDetail';
-import Loading from '../../loading/Loading';
+
 
 const ItemDetailContainer = () => {
 
-	const [loading, setLoading] = useState(true);
+	
 
 	const [product, setProduct] = useState([]);
 	const { id } = useParams();
@@ -21,12 +21,11 @@ const ItemDetailContainer = () => {
 		getDoc(queryDoc)
 			.then(res => setProduct({id: res.id, ...res.data()})
 		);
-		setLoading(false);
 	}, [id]);
 
 	return (
 		<section className="item-container min-vh-100">
-			{loading ? <Loading /> : <ItemDetail key={product.id} data={product}></ItemDetail>}
+			{<ItemDetail key={product.id} data={product}></ItemDetail>}
 		</section>
 	);
 };
