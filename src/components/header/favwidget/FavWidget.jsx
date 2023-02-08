@@ -9,7 +9,7 @@ const FavWidget = ({ product, isFav, toggleFav}) => {
     
     return (
         <span onClick={() => {
-            addToFavorites(product);
+            addToFavorites(product) ;
             toggleFav();
         }}>
              {isFav ? <BsSuitHeartFill /> : <BsSuitHeart />}

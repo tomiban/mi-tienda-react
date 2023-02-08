@@ -48,10 +48,9 @@
 
 .nav-icons a {
 	margin:  0 20px;
-
 }
 
-.nav-icons a:hover, .nav-icons span:hover {
+.nav-icons a:hover, .fav-icon:hover {
 	color: yellow;
 	cursor: pointer;
 }

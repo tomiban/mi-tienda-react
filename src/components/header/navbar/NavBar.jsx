@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "../MenuItems";
 import CartWidget from "../cartwidget/CartWidget";
-import FavWidget from "../favwidget/FavWidget";
+import {BsSuitHeart} from "react-icons/bs";
 import FavoriteList from "../favoriteList/FavoriteList";
 
 import "./NavBar.css";
@@ -38,18 +38,18 @@ const NavBar = () => {
 				})}
 			</div>
 
-			<div className='nav-icons'>
-				<span
-					className=''
+			<div className='nav-icons d-flex'>
+				<div
+					className='fav-icon'
 					onClick={() => setActive(!active)}>
-					<FavWidget />
+					<BsSuitHeart />
 					<div
 						className={`container-cart-products ${
 							active ? "" : "hidden-cart"
 						}`}>
 						<FavoriteList />
 					</div>
-				</span>
+				</div>
 
 				<Link to='/PreEntrega2Banchio/cart'>
 					<CartWidget />
