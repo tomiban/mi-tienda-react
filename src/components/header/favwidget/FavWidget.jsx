@@ -8,7 +8,7 @@ const FavWidget = ({ product, isFav, toggleFav}) => {
 	const { addToFavorites, favorites } = useFavoritesContext();
     
     return (
-        <span className="" onClick={() => {
+        <span onClick={() => {
             addToFavorites(product);
             toggleFav();
         }}>

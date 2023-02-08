@@ -48,10 +48,12 @@
 
 .nav-icons a {
 	margin:  0 20px;
+
 }
 
-.nav-icons a:hover {
+.nav-icons a:hover, .nav-icons span:hover {
 	color: yellow;
+	cursor: pointer;
 }
 
 .nav_toggle {

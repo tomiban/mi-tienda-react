@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "../MenuItems";
 import CartWidget from "../cartwidget/CartWidget";
-import ProfileWidget from "../profilewidget/ProfileWidget";
 import FavWidget from "../favwidget/FavWidget";
 import FavoriteList from "../favoriteList/FavoriteList";
 
@@ -39,8 +38,9 @@ const NavBar = () => {
 				})}
 			</div>
 
-			<div className='nav-icons'>   
-				<span className=''
+			<div className='nav-icons'>
+				<span
+					className=''
 					onClick={() => setActive(!active)}>
 					<FavWidget />
 					<div
@@ -49,8 +49,8 @@ const NavBar = () => {
 						}`}>
 						<FavoriteList />
 					</div>
-        </span>
-        
+				</span>
+
 				<Link to='/PreEntrega2Banchio/cart'>
 					<CartWidget />
 				</Link>
