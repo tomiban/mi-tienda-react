@@ -19,12 +19,9 @@ const FavoritesContextProvider = ({ children }) => {
         }
     };
     
-
-    console.log(favorites)
-
 	return (
 		<div>
-			<FavoritesContext.Provider value={{favorites, addToFavorites }}>
+			<FavoritesContext.Provider value={{favorites, setFavorites, addToFavorites }}>
 				{children}
 			</FavoritesContext.Provider>
 		</div>
