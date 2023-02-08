@@ -2,3 +2,15 @@ footer {
     background-color: #05101F;
     color: #ffff;
 }
+
+.footer-img {
+    width: 100%;
+    max-width: 100px !important;
+}
+
+@media (max-width: 767px) {
+    .footer-img {
+      max-width: 70px;
+    }
+}
+
