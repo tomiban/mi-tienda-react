@@ -1,12 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import { AiFillStar } from "react-icons/ai";
 import ItemCount from "../itemCount/ItemCount";
 import { useCartContext } from "../../../../context/CartContext";
 import { Link } from "react-router-dom";
 import Loading from "../../../loading/Loading";
 
+import "./ItemDetail.css"
 const ItemDetail = ({ data }) => {
 	const { addProduct } = useCartContext();
 	const { title, price, image, description, category, rate } = data;
@@ -38,14 +39,14 @@ const ItemDetail = ({ data }) => {
 	};
 
 	return (
-		<Container className='py-5'>
+		<div className='container-fluid py-5'>
 			<div className='row'>
 				<div className='col-md-6 position-relative'>
 					{loading && <Loading />}
 					<img
 						src={image}
 						alt={title}
-						className='img-fluid'
+						className='img-fluid max-img-size'
 						onLoad={() => setLoading(!loading)}
 					/>
 				</div>
@@ -71,7 +72,7 @@ const ItemDetail = ({ data }) => {
 					)}
 				</div>
 			</div>
-		</Container>
+		</div>
 	);
 };
 export default ItemDetail;
