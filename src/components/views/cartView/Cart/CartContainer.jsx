@@ -17,7 +17,7 @@ const Cart = () => {
 
     const MySwal = withReactContent(Swal);
 
-    const { cart, totalPrice } = useCartContext();
+    const { cart, totalPrice, clearCart } = useCartContext();
 
 
     const order = {
@@ -51,11 +51,13 @@ const Cart = () => {
                 );
                 MySwal.fire({
                     icon: 'success',
-                    title: <p>¡Compra realizada!</p>
+                    title: <p>¡Gracias por tu compra!</p>,
+                    text: `Has adquirido los siguientes productos: ${cart.map(product => `${product.title} (${product.quantity})`).join(', ')}`,
                 }) 
+                clearCart();
             } 
         })
-
+        
     };
 
     if (cart.length === 0) {
