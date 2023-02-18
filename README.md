@@ -1,10 +1,10 @@
 # **Proyecto Ecommerce React** 
 # *Curso de React dictado por Coderhouse*
-### **Nahuel Gramajo**
+### **Tomás Banchio**
 ### **Contacto:**
 
-[![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=23272d)](https://www.linkedin.com/in/Nahuelz08/)
-[![GitHub Profile](https://img.shields.io/badge/GitHub-informational?style=for-the-badge&logo=GitHub&logoColor=fff&color=23272d)](https://github.com/Nahuelz08)
+[![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=23272d)]((https://www.linkedin.com/in/tbanchio/)
+[![GitHub Profile](https://img.shields.io/badge/GitHub-informational?style=for-the-badge&logo=GitHub&logoColor=fff&color=23272d)](https://github.com/tomiban)
 
 # *Info:*
 
