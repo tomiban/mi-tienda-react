@@ -3,7 +3,7 @@
 ### **Tomás Banchio**
 ### **Contacto:**
 
-[![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=23272d)]((https://www.linkedin.com/in/tbanchio/)
+[![LinkedId](https://img.shields.io/badge/LinkedIn-informational?style=for-the-badge&logo=linkedin&logoColor=fff&color=23272d)](https://www.linkedin.com/in/tbanchio/)
 [![GitHub Profile](https://img.shields.io/badge/GitHub-informational?style=for-the-badge&logo=GitHub&logoColor=fff&color=23272d)](https://github.com/tomiban)
 
 # *Info:*
@@ -16,14 +16,14 @@ Ademas los productos al realizar la compra se descuentan del stock almacenado en
 
 
 ## *Version Final:*
-Link a Vercel del proyecto: 
-- [![App](https://img.shields.io/badge/App-informational?style=for-the-badge&logo=netlify&logoColor=fff&color=23272d)](https://proyecto-ecommerce-react.vercel.app/)
+Link del proyecto: 
+- [![App](https://img.shields.io/badge/App-informational?style=for-the-badge&logo=netlify&logoColor=fff&color=23272d)](https://tomiban.github.io/PreEntrega2Banchio/)
 
 
 **Capturas de pantalla:**
 
 ### 1. Home:
-## 
+## ![](./src/assets/img/readme/home.jpg )
 
 ### 2. Detalle del producto seleccionado:
 
