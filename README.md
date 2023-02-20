@@ -9,7 +9,7 @@
 # *Info:*
 
 Este es el proyecto final del curso dictado por [CoderHouse](https://www.coderhouse.com) de React Js de la carrera Front-End.
-Se trata de un Ecommerce, construido sobre React, que implementa React Router, React Hooks, Bootstrap (tanto común como React Bootstrap), React-Icons, React-Spinners y Firebase. Contiene un filtro por categoría, almacenamiento de favoritos y un carrito de compras para registrar el pedido.
+Se trata de un Ecommerce, construido sobre React, que implementa React Router, React Hooks, Bootstrap (tanto común como React Bootstrap), React-Icons, React-Spinners, SweetAlert2 y Firebase. Contiene un filtro por categoría, almacenamiento de favoritos y un carrito de compras para registrar el pedido.
 
 
 ## *Version Final:*
