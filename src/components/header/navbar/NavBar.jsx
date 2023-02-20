@@ -15,7 +15,7 @@ const NavBar = () => {
 		<nav className='NavbarItems'>
 			<Link
 				className='nav-links'
-				to='/'>
+				to='/PreEntrega2Banchio'>
 				<div className='navbar-logo'>
 					<h1 className='navbar-title'>Tienda </h1>
 					<img

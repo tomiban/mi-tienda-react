@@ -21,7 +21,7 @@ import FavoritesContextProvider from "./context/FavContext";
 import CartContainer from "./components/views/cartView/Cart/CartContainer";
 //Core
 import reportWebVitals from "./reportWebVitals";
-import ItemCart from "./components/views/cartView/ItemCart/ItemCart";
+
 
 
 /*#####################################################
