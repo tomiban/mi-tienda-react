@@ -38,7 +38,7 @@ const Item = ({ data }) => {
 		  <span className='card-product-text '>$ {data.price}</span>
 		  <div className='card-product-link'>
 			<Link
-			  to={`/PreEntrega2Banchio/item/${data.id}`}
+			  to={`/mi-tienda-react/item/${data.id}`}
 			  className='btn btn-primary px-4 card-link'>
 			  Comprar{" "}
 			</Link>

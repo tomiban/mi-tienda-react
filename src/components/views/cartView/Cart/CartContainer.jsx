@@ -65,7 +65,7 @@ const Cart = () => {
             <div className="container vh-100 ">
                 <div className="d-flex flex-column justify-content-end align-items-center p-5 m-5">
                 <p className="lead fw-bold text-center my-4">Carrito vacío..</p>
-                <Link className="btn btn-outline-primary" to="/">Continuar comprando</Link>
+                <Link className="btn btn-outline-primary" to="/mi-tienda-react">Continuar comprando</Link>
                 </div>
             </div>
         );

@@ -15,7 +15,7 @@ const NavBar = () => {
 		<nav className='NavbarItems'>
 			<Link
 				className='nav-links'
-				to='/PreEntrega2Banchio'>
+				to='/mi-tienda-react'>
 				<div className='navbar-logo'>
 					<h1 className='navbar-title'>Tienda </h1>
 					<img
@@ -31,7 +31,7 @@ const NavBar = () => {
 						<Link
 							key={index}
 							className={item.cName}
-							to={`/PreEntrega2Banchio/category/${item.url}`}>
+							to={`/mi-tienda-react/category/${item.url}`}>
 							{item.title}
 						</Link>
 					);
@@ -51,7 +51,7 @@ const NavBar = () => {
 					</div>
 				</div>
 
-				<Link to='/PreEntrega2Banchio/cart'>
+				<Link to='/mi-tienda-react/cart'>
 					<CartWidget />
 				</Link>
 			</div>

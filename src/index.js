@@ -37,23 +37,23 @@ root.render(
         <Routes>
           <Route
             exact
-            path="/PreEntrega2Banchio"
+            path="/mi-tienda-react"
             element={<ItemListContainer />}
           />
             <Route exact path="/" element={<ItemListContainer />} />
             
           <Route
             exact
-            path="/PreEntrega2Banchio/category/:categoryId"
+            path="/mi-tienda-react/category/:categoryId"
             element={<ItemListContainer />}
           />
           <Route
             exact
-            path="/PreEntrega2Banchio/category/:categoryId"
+            path="/mi-tienda-react/category/:categoryId"
             element={<ItemListContainer />}
           />
-          <Route exact path="/PreEntrega2Banchio/item/:id" element={<ItemDetailContainer />} />
-          <Route exact path="/PreEntrega2Banchio/cart" element={<CartContainer></CartContainer>}></Route>
+          <Route exact path="/mi-tienda-react/item/:id" element={<ItemDetailContainer />} />
+          <Route exact path="/mi-tienda-react/cart" element={<CartContainer></CartContainer>}></Route>
           </Routes>
           </FavoritesContextProvider>
       </CartProvider>

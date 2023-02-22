@@ -25,12 +25,12 @@ const ItemDetail = ({ data }) => {
 		return (
 			<>
 				<Link
-					to='/PreEntrega2Banchio'
+					to='/mi-tienda-react'
 					className=''>
 					<Button variant='primary'>Seguir comprando</Button>
 				</Link>
 				<Link
-					to='/PreEntrega2Banchio/cart'
+					to='/mi-tienda-react/cart'
 					className='mx-3'>
 					<Button variant='outline-success'>Ir al carrito</Button>
 				</Link>
