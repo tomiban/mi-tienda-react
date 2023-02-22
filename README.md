@@ -30,11 +30,11 @@ Link del proyecto:
 ## 
 
 ### 3. Carrito de compras, con productos seleccionados:
-![](./src/assets/CarritoDeCompras.png)
+![](./src/assets/Carrito.png)
 ## 
 
-### 4. Formulario para realizar la compra:
-
+### 4.Confirmación de la compra:
+![](./src/assets/Modal.png)
 ## 
 ### 5. Compra finalizada con éxito:
-
+![](./src/assets/Recibo.png)
