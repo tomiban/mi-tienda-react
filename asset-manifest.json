@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/PreEntrega2Banchio/static/css/main.74637231.css",
-    "main.js": "/PreEntrega2Banchio/static/js/main.22a6558b.js",
-    "static/js/787.46493d11.chunk.js": "/PreEntrega2Banchio/static/js/787.46493d11.chunk.js",
-    "static/media/logo.png": "/PreEntrega2Banchio/static/media/logo.5bd9d5288c4c99576c55.png",
-    "index.html": "/PreEntrega2Banchio/index.html",
-    "main.74637231.css.map": "/PreEntrega2Banchio/static/css/main.74637231.css.map",
-    "main.22a6558b.js.map": "/PreEntrega2Banchio/static/js/main.22a6558b.js.map",
-    "787.46493d11.chunk.js.map": "/PreEntrega2Banchio/static/js/787.46493d11.chunk.js.map"
+    "main.css": "/mi-tienda-react/static/css/main.74637231.css",
+    "main.js": "/mi-tienda-react/static/js/main.31e68943.js",
+    "static/js/787.46493d11.chunk.js": "/mi-tienda-react/static/js/787.46493d11.chunk.js",
+    "static/media/logo.png": "/mi-tienda-react/static/media/logo.5bd9d5288c4c99576c55.png",
+    "index.html": "/mi-tienda-react/index.html",
+    "main.74637231.css.map": "/mi-tienda-react/static/css/main.74637231.css.map",
+    "main.31e68943.js.map": "/mi-tienda-react/static/js/main.31e68943.js.map",
+    "787.46493d11.chunk.js.map": "/mi-tienda-react/static/js/787.46493d11.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74637231.css",
-    "static/js/main.22a6558b.js"
+    "static/js/main.31e68943.js"
   ]
 }
