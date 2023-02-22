@@ -14,7 +14,7 @@ Se trata de un Ecommerce, construido sobre React, que implementa React Router, R
 
 ## *Version Final:*
 Link del proyecto: 
-- [![App](https://img.shields.io/badge/App-informational?style=for-the-badge&logo=netlify&logoColor=fff&color=23272d)](https://tomiban.github.io/PreEntrega2Banchio/)
+- [![App](https://img.shields.io/badge/App-informational?style=for-the-badge&logo=netlify&logoColor=fff&color=23272d)](https://tomiban.github.io/mi-tienda-react/)
 
  
 
