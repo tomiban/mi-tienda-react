@@ -1,32 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { getFirestore, doc, getDoc } from 'firebase/firestore';
 
-
+import { productos } from '../../../data/productos';
+import Loading from '../../loading/Loading';
+import ItemDetail from './itemDetail/itemDetail';
 import './ItemDetailContainer.css';
 
-import ItemDetail from './itemDetail/itemDetail';
-
-
 const ItemDetailContainer = () => {
-
-	
-
-	const [product, setProduct] = useState([]);
+	const [product, setProduct] = useState();
 	const { id } = useParams();
 
 	useEffect(() => {
-		const querydb = getFirestore()
-		const queryDoc = doc(querydb, 'listaProductos', id)
-		getDoc(queryDoc)
-			.then(res => setProduct({id: res.id, ...res.data()})
-		);
+		setProduct(productos.find(producto => producto.id === id));
 	}, [id]);
 
 	return (
-		<section className="item-container min-vh-100">
-			{<ItemDetail key={product.id} data={product}></ItemDetail>}
+		<section className='item-container min-vh-100'>
+			{product ? (
+				<ItemDetail key={product.id} data={product}></ItemDetail>
+			) : (
+				<Loading />
+			)}
 		</section>
 	);
 };
+
 export default ItemDetailContainer;

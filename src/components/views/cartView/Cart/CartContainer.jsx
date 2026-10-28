@@ -9,7 +9,13 @@ import { Button } from "react-bootstrap";
 //2) Estilos
 import "./CartContainer.css";
 import ItemCart from "../ItemCart/ItemCart";
-import { addDoc, collection, getFirestore } from "firebase/firestore";
+
+const saveOrder = (order) => {
+    const key = 'orders';
+    const orders = JSON.parse(window.localStorage.getItem(key) || '[]');
+    orders.push({ ...order, id: `${Date.now()}`, createdAt: new Date().toISOString() });
+    window.localStorage.setItem(key, JSON.stringify(orders));
+};
 
 // 3) Componentes
 
@@ -33,9 +39,6 @@ const Cart = () => {
 
 
     const handleClick = () => {
-        const db = getFirestore();
-        const orderCollection = collection(db, 'orders');
-       
         MySwal.fire({
             icon: 'question',
             title: <p>¿Estás seguro de confirmar la compra?</p>,
@@ -46,9 +49,7 @@ const Cart = () => {
             confirmButtonColor: '#198754'
         }).then(res => {
             if (res.isConfirmed) {
-                addDoc(orderCollection, order)
-                .then(({ id }) => console.log(id)
-                );
+                saveOrder(order);
                 MySwal.fire({
                     icon: 'success',
                     title: <p>¡Gracias por tu compra!</p>,
